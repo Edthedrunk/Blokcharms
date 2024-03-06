@@ -94,7 +94,7 @@ body {
 
 .nft {
   background-size: contain;
-  background-image: url("/img/multispingif.gif");
+  background-image: url("/img/bloklogo.png");
   width: 100%;
   height: 100%;
 }
@@ -130,7 +130,7 @@ body {
   right: -500px;
   bottom: -500px;
   left: -500px;
-  background: transparent url("../assets/images/multispingif.gif") 0 0;
+  background: transparent url("../assets/images/bloklogo.png") 0 0;
   background-size: 320px 320px;
   opacity: 0.35;
   animation: tv-static 1s steps(8, end) infinite both;
