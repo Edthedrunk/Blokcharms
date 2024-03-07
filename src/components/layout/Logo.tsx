@@ -5,7 +5,7 @@ const Logo = () => {
     <div className="logo w-100 flex flex-row justify-center overflow-visible">
       <Image
         priority={true}
-        src="/img/logo.png"
+        src="/img/bloklogo.png"
         alt="logo"
         sizes="600px"
         width={600}

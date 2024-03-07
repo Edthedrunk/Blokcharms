@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #cabd89;
-  --color-background: #000000;
+  --color-primary: #a9a9a9;
+  --color-background: #222222;
   --color-blue: #818c9e;
   --color-purple: #9482a1;
-  --color-green: #aaa85e;
+  --color-green: #62aa5e;
 }
 
 @font-face {
@@ -51,11 +51,11 @@ body {
 }
 
 .text-gold {
-  color: #cabd89;
+  color: #a9a9a9;
 }
 
 .gold {
-  background: -webkit-linear-gradient(#918863, #fffdb8);
+  background: -webkit-linear-gradient(#a9a9a9, #808080);
 }
 
 .border {
@@ -94,7 +94,7 @@ body {
 
 .nft {
   background-size: contain;
-  background-image: url("/img/multispingif.gif");
+  background-image: url("/img/default.png");
   width: 100%;
   height: 100%;
 }
@@ -126,14 +126,14 @@ body {
 
 .tv-static {
   position: absolute;
-  top: -500px;
-  right: -500px;
-  bottom: -500px;
-  left: -500px;
+  top: -680px;
+  right: -800px;
+  bottom: -700px;
+  left: -750px;
   background: transparent url("../assets/images/multispingif.gif") 0 0;
-  background-size: 320px 320px;
-  opacity: 0.35;
-  animation: tv-static 1s steps(8, end) infinite both;
+  background-size: 600px 338px;
+  opacity: 1;
+  
 }
 
 .status {

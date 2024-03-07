@@ -1,7 +1,5 @@
 import Image from "next/image";
 import xIcon from "@/utils/icons/x.svg";
-import discordIcon from "@/utils/icons/discord.svg";
-import commonGroundIcon from "@/utils/icons/common-ground.svg";
 import gitIcon from "@/utils/icons/git.svg";
 
 const Footer = () => {
@@ -11,7 +9,7 @@ const Footer = () => {
         <a
           className="w-100 max-w-12 p-3"
           target="_blank"
-          href="https://twitter.com/hoodiecartel"
+          href="https://twitter.com/blokcharms"
         >
           <Image
             src={xIcon}
@@ -22,24 +20,11 @@ const Footer = () => {
             style={{ objectFit: "contain" }}
           />
         </a>
-        <a
-          className="w-100 max-w-12 p-3"
-          target="_blank"
-          href="https://discord.gg/hadpVYCEWr"
-        >
-          <Image
-            src={discordIcon}
-            alt="discord icon"
-            sizes="40px"
-            width={40}
-            height={40}
-            style={{ objectFit: "contain" }}
-          />
-        </a>
+       
         <a
           className="w-100 max-w-[52px] p-3"
           target="_blank"
-          href="https://github.com/zeroxLucky/burntpunx"
+          href="https://github.com/Edthedrunk/Blokcharms"
         >
           <Image
             src={gitIcon}
@@ -49,34 +34,8 @@ const Footer = () => {
             style={{ objectFit: "contain" }}
           />
         </a>
-        <a
-          className="w-100 max-w-12 p-3"
-          target="_blank"
-          href="https://app.cg/c/1EzCJWsy3p/"
-        >
-          <Image
-            src={commonGroundIcon}
-            alt="commond ground icon"
-            sizes="40px"
-            width={40}
-            height={40}
-            style={{ objectFit: "contain" }}
-          />
-        </a>
-        <a
-          className="w-100 max-w-12 p-3"
-          target="_blank"
-          href="https://twitter.com/universalpunx"
-        >
-          <Image
-            src={xIcon}
-            alt="x icon"
-            sizes="40px"
-            width={40}
-            height={40}
-            style={{ objectFit: "contain" }}
-          />
-        </a>
+        
+       
       </div>
     </footer>
   );
