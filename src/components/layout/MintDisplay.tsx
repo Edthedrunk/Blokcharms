@@ -30,7 +30,7 @@ const LYXButton = () => {
       }}
       className="digital text-gold shrink-0 flex grow justify-center items-center border col-span-4 rounded-md text-right p-2"
     >
-      {chill ? "6,969 Chill" : "4.2 LYX"}
+      {chill ? "1000 Chill" : "0.1 LYX"}
     </button>
   );
 };
@@ -79,7 +79,7 @@ const Error = () => {
       }}
       className="text-red-500 flex grow justify-center items-center border-[2px] border-red-500 col-span-12 rounded-md text-right p-2"
     >
-      Max can only be 100
+      Max can only be 420
     </motion.span>
   );
 };

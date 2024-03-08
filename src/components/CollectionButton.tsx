@@ -10,7 +10,7 @@ export default function CollectionButton() {
       href="/gallery"
       className="max-h-12 border rounded-md digital text-sm py-3 tracking-widest px-6 w-full text-center text-gold"
     >
-      View Collection
+      View Inventory
     </Link>
   );
 }

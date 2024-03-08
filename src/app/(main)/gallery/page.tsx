@@ -4,10 +4,49 @@ import { getProfile, getTokens } from "@/actions/contract";
 import GridItem from "@/components/layout/GridItem";
 import Image from "next/image";
 import { useAccount } from "wagmi";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import ConnectButton from "@/components/ConnectButton";
 import { Copy } from "@/utils/icons/copy";
 import { toast } from "sonner";
+
+// DropdownItem component for each color option
+const DropdownItem = ({ color, image, name, onSelect }) => (
+  <a href="#" onClick={() => onSelect(color, image)} className="dropdown-item">
+    {name}
+  </a>
+);
+
+// Square component including the dropdown
+const Square = ({ number }) => {
+  const [color, setColor] = useState("#FFFFFF"); // Default color
+  const [image, setImage] = useState("trans.png"); // Default image
+
+  const handleSelect = (selectedColor: SetStateAction<string>, selectedImage: SetStateAction<string>) => {
+    setColor(selectedColor);
+    setImage(selectedImage);
+    // Additional actions upon color selection
+  };
+
+  return (
+    <div className="square-container">
+      <div className="square" style={{ backgroundColor: color }}>
+        <span className="square-number">{number}</span>
+        <img src={image} alt="" width={50} height={50} />
+      </div>
+      <div className="dropdown-menu">
+        {/* Each DropdownItem represents a color option */}
+        <DropdownItem color="#FFC0CB" image="Pink.png" name="Pink" onSelect={handleSelect} />
+        <DropdownItem color="#0000FF" image="Blue.png" name="Blue" onSelect={handleSelect} />
+        <DropdownItem color="#00FF00" image="Lime.png" name="Lime" onSelect={handleSelect} />
+        <DropdownItem color="#FFA500" image="Orange.png" name="Orange" onSelect={handleSelect} />
+        <DropdownItem color="#FF0000" image="Red.png" name="Red" onSelect={handleSelect} />
+        <DropdownItem color="#000000" image="Black.png" name="Black" onSelect={handleSelect} />
+        <DropdownItem color="#FFFFFF" image="White.png" name="White" onSelect={handleSelect} />
+        {/* Continue adding DropdownItem components for other colors */}
+      </div>
+    </div>
+  );
+}; 
 
 export default function Page() {
   const { address } = useAccount();
@@ -32,6 +71,10 @@ export default function Page() {
       }
     })();
   }, [address]);
+
+ // Generate squares with dropdowns
+ const squares = Array.from({ length: 42 }, (_, i) => <Square key={i} number={i + 1} />);
+
 
   const grid = tokens.map((token, i) => (
     <GridItem token={token} key={`grid-item-${i}`} />
@@ -90,5 +133,8 @@ export default function Page() {
         Home
       </Link>
     </div>
+    
   );
+  
 }
+
