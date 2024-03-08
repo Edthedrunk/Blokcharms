@@ -34,20 +34,13 @@ export default function TOSModal() {
           onClick={setTos}
           className="self-center border justify-center text-center max-w-lg p-4 rounded-lg overflow-y-auto"
         >
-          <div className="cursive text-4xl">A Note From The Hoodie Cartel</div>
+          <div className="cursive text-4xl">A Note From The Ed the Drunk</div>
           <div className="basker text-lg">
-            By minting this NFT you are agreeing to be contractually obligated
-            to burn it at a later date. Each NFT will be redeemable for one (1)
-            limited edition trait (Gold Hoodies EXCLUDED) in the Universal PunX
-            decentralized application. You will have the choice to add above
-            mentioned trait(s) to individual Universal PunX or multiple traits
-            to one Universal PunX. The Hoodie Cartel reserves the right to
-            expire this offer at any time, the attached ipfs image may also be
-            terminated at any time. We do not condone trading of this NFT and
-            there should be no expectation that this NFT should increase in
-            value, for that reason we have applied a 6.9% royalty. WARNING This
-            mint is only available on a Universale Profile. Mint accordingly
-            degens.
+            By minting this NFT you are purchasing individual links to create a 
+            42 link bracelet. You will be able to burn these into Blokchains once
+            phase 2 begins.
+             WARNING
+             This mint is only available on a Universale Profile. 
           </div>
           <StayBundled />
         </ModalBody>

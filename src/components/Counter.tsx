@@ -3,7 +3,7 @@ import { getCount } from "@/actions/contract";
 import { useEffect, useState } from "react";
 
 export default function Counter() {
-  const [count, setCount] = useState(42);
+  const [count, setCount] = useState(0);
 
   // get count from server action
   const get = async () => {

@@ -32,11 +32,11 @@ contract BurntPunX is
     LSP8Enumerable,
     ReentrancyGuard
 {
-    uint256 public constant MAX_SUPPLY = 6900;
-    uint256 public constant TEAM_RESERVE = 169;
+    uint256 public constant MAX_SUPPLY = 42000;
+    uint256 public constant TEAM_RESERVE = 420;
     uint256 public constant MAX_MINTABLE = 100;
-    uint256 public constant PRICE = 4.2 ether;
-    uint256 public constant CHILLPRICE = 6969 ether;
+    uint256 public constant PRICE = 0.1 ether;
+    uint256 public constant CHILLPRICE = 1000 ether;
 
     address constant CHILL_TOKEN_ADDRESS =
         0x5B8B0E44D4719F8A328470DcCD3746BFc73d6B14;

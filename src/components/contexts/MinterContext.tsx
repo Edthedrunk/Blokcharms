@@ -24,7 +24,7 @@ interface ContextProps {
 const MinterContext = createContext<ContextProps>({} as ContextProps);
 
 export const MinterProvider = ({ children }: { children: ReactNode }) => {
-  const [count, setCount] = useState("1");
+  const [count, setCount] = useState("42");
   const [chill, setChill] = useState(false);
   const [error, setError] = useState(false);
   const [frameImage, setFrameImage] = useState("");

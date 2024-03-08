@@ -8,7 +8,7 @@ import lsp3ProfileSchema from "@erc725/erc725.js/schemas/LSP3ProfileMetadata.jso
 
 // Get the count of tokens left to mint
 export const getCount = async () => {
-  const totalSupply = 6900;
+  const totalSupply = 42000;
   const provider = new ethers.JsonRpcProvider(mainnet_rpc);
   const contract = new ethers.Contract(
     contract_address,

@@ -22,7 +22,7 @@ const MintButton = () => {
       setFrameImage("");
       try {
         // Calculate total lyx
-        const total = (parseInt(count) * 4.2).toFixed(1);
+        const total = (parseInt(count) * 0.1).toFixed(1);
         const provider = await getEthersSigner(config);
 
         // init contract
